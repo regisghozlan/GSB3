@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Frais_Hors_Forfait">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logolebon" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="Frais hors Forfait"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="libelle:" />
+
+            <EditText
+                android:id="@+id/libellefrais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textShortMessage|text" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Montant:" />
+
+            <EditText
+                android:id="@+id/montantfrais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="signed|integer|decimal" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="78dp"
+                android:layout_height="43dp"
+                android:text="Date:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/datefrais"
+                    android:layout_width="198dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:singleLine="false" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ED80AFD6"
+                    android:baselineAlignBottom="false"
+                    android:longClickable="false"
+                    android:onClick="ShowCal"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAjouter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:onClick="monClick"
+                android:text="Ajouter" />
+
+            <Button
+                android:id="@+id/btnModifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modifier" />
+
+            <Button
+                android:id="@+id/btnSupprimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supprimer" />
+
+            <Button
+                android:id="@+id/retour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#84B946"
+                android:onClick="clique_retour"
+                android:text="Retour" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

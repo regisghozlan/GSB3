@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GSB Notes de Frais</string>
+    <string-array name="TypeForfait">
+        <item></item>
+        //le premier est vide pour ne pas qu'une des 4 soit selectionnée automatiquement
+        <item>Forfait etape</item>
+        <item>Frais KM</item>
+        <item>Nuitee hotel</item>
+        <item>Repas restaurant</item>
+        <item>Petit déjeuner</item>
+    </string-array>
+
+    <string-array name="ValeurForfait">
+        <item>0</item>
+        //le premier est vide pour ne pas qu'une des 4 soit selectionnée automatiquement
+        <item>75</item>
+        <item>2.5</item>
+        <item>50</item>
+        <item>20</item>
+        <item>7.5</item>
+    </string-array>
+</resources>
